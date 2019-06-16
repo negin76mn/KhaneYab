@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ویرایش ارسال </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .my-nav-item {
+            color: #662e91;
+            height: 120px;
+            padding: 20px;
+            font-family: IranBold;
+        }
+        
+        .my-title {
+            color: #fcff00;
+            font-family: IranBold;
+        }
+        
+        .color {
+            color: #662e91;
+        }
+        
+        .yellow {
+            color: #fcff00;
+        }
+        
+        .bgcolor {
+            background-color: #662e91;
+        }
+        
+        .color-dark {
+            color: #56326f;
+        }
+        
+        .bgcolor-dark {
+            background-color: #56326f;
+        }
+        
+        @font-face {
+            font-family: IranBlack;
+            src: url(IRAN_Black.ttf);
+        }
+        
+        @font-face {
+            font-family: Iran;
+            src: url(IRAN.ttf);
+        }
+        
+        @font-face {
+            font-family: IranBold;
+            src: url(IRAN_Bold.ttf);
+        }
+        
+        .iran-black {
+            font-family: IranBlack;
+        }
+        
+        .iran-bold {
+            font-family: IranBold;
+        }
+        
+        .iran {
+            font-family: Iran;
+        }
+        
+        .bgimage {
+            height: 60%;
+            background: url('pic2.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+        
+        .myBorder {
+            border: 2px solid #8a5dad;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light iran-bold" style="padding: 0px;">
+            <div class="d-flex col-sm-5 justify-content-center" style="padding-top: 20px;">
+                <img src="Logo.png" width="160" height="61">
+                <div class="d-flex flex-column" style="padding-right:10%;">
+                    <div class="h3 color-dark iran-black">خانه‌یاب</div>
+                    <div class="color-dark iran" style="min-width: 100px;"><small>مشاور املاک آنلاین</small></div>
+                </div>
+            </div>
+            <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" style="list-style-type:none;">
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center justify-content-center color" style=" padding:20px; height:120px;" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center justify-content-center color" style="padding:20px; height:120px;" href="#">جست‌وجو</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-nav d-flex align-items-center color text-white bgcolor" style="padding:20px; height:120px;" href="login.html">ورود</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-nav d-flex align-items-center color" style="padding:20px; height:120px;" href="#">درباره‌ی ما</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--                                                                                header                                                                                     -->
+
+    <div class="container-fluid bg-light" style="padding: 10% 20%">
+        <div class="containar color">
+
+            <form action="/action_page.php" style="padding: 30px;" class="text-right iran myBorder">
+                <div class="form-group">
+                    <label for="title">عنوان:</label>
+                    <input type="text" class="form-control" value="" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="title">بارگزاری تصویر:</label>
+                    <div class="custom-file" id="customFile" lang="es">
+                        <input type="file" class="custom-file-input" id="title" aria-describedby="fileHelp">
+                        <label class="custom-file-label text-left" for="title">
+                                       انتخاب تصویر
+                                    </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="state">استان:</label>
+                            <select class="form-control" id="state">
+                            <option value="+47">چهارمحال و بختیاری</option>
+                            <option value="+46">تهران</option>
+                            <option value="+45">خوزستان</option>
+                          </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="city">شهر:</label>
+                            <select class="form-control" id="city">
+                          <option value="+47">شهرکرد</option>
+                          <option value="+46">اهواز</option>
+                          <option value="+45">تهران</option>
+                        </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="region">منطقه:</label>
+                            <input type="text" class="form-control" id="region">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="area">متراژ:</label>
+                            <div class="d-flex">
+                                <input type="number" class="form-control" id="area" min="20" max="10000000"><span style="margin: 5px;">مترمربع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="area">قیمت:</label>
+                            <div class="d-flex">
+                                <input type="number" class="form-control" id="area" min="1000000" max="1000000000" step="100000"><span style="margin: 5px;">ریال</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="area">سال ساخت:</label>
+                            <div class="d-flex">
+                                <input type="number" class="form-control" id="area" min="1200" max="1398">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="rooms">تعداد اتاق:</label>
+                            <select class="form-control" id="rooms">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="+4">بیشتر از 4</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="land">نوع ملک:</label>
+                            <select class="form-control" id="land">
+                            <option value="+47">مسکونی</option>
+                            <option value="+46">تجاری</option>
+                            <option value="+45">صنعتی</option>
+                            <option value="+45">زمین</option>
+                          </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="category">دسته بندی:</label>
+                            <select class="form-control" id="category">
+                          <option value="+47">آپارتمان</option>
+                          <option value="+46">ویلایی</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="contract">نوع معامله:</label>
+                            <select class="form-control" id="contract">
+                          <option value="+47">فروش</option>
+                          <option value="+46">رهن-اجاره</option>
+                          <option value="+46">رهن</option>
+                          <option value="+46">اجاره</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="address">آدرس:</label>
+                            <textarea class="form-control" rows="3" id="address"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="address">توضیحات تکمیلی:</label>
+                            <textarea class="form-control" rows="3" id="address"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="phone-number">شماره تلفن:</label>
+                            <input type="text" class="form-control" id="phone-number">
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+
+                </div>
+                <br />
+                <div style="margin: 0% 40%">
+                    <button type="submit" class="btn btn-primary btn-block bgcolor myBorder">ثبت</button>
+                </div>
+
+                <br />
+
+            </form>
+        </div>
+    </div>
+
+</body>

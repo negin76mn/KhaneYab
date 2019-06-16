@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ثبت نام </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .my-nav-item {
+            color: #662e91;
+            height: 120px;
+            padding: 20px;
+            font-family: IranBold;
+        }
+        
+        .my-title {
+            color: #fcff00;
+            font-family: IranBold;
+        }
+        
+        .color {
+            color: #662e91;
+        }
+        
+        .yellow {
+            color: #fcff00;
+        }
+        
+        .bgcolor {
+            background-color: #662e91;
+        }
+        
+        .color-dark {
+            color: #56326f;
+        }
+        
+        .bgcolor-dark {
+            background-color: #56326f;
+        }
+        
+        @font-face {
+            font-family: IranBlack;
+            src: url(IRAN_Black.ttf);
+        }
+        
+        @font-face {
+            font-family: Iran;
+            src: url(IRAN.ttf);
+        }
+        
+        @font-face {
+            font-family: IranBold;
+            src: url(IRAN_Bold.ttf);
+        }
+        
+        .iran-black {
+            font-family: IranBlack;
+        }
+        
+        .iran-bold {
+            font-family: IranBold;
+        }
+        
+        .iran {
+            font-family: Iran;
+        }
+        
+        .bgimage {
+            height: 60%;
+            background: url('pic2.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+        
+        .myBorder {
+            border: 2px solid #8a5dad;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light iran-bold" style="padding: 0px;">
+            <div class="d-flex col-sm-5 justify-content-center" style="padding-top: 20px;">
+                <img src="Logo.png" width="160" height="61">
+                <div class="d-flex flex-column" style="padding-right:10%;">
+                    <div class="h3 color-dark iran-black">خانه‌یاب</div>
+                    <div class="color-dark iran" style="min-width: 100px;"><small>مشاور املاک آنلاین</small></div>
+                </div>
+            </div>
+            <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" style="list-style-type:none;">
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center justify-content-center color" style=" padding:20px; height:120px;" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center justify-content-center color" style="padding:20px; height:120px;" href="#">جست‌وجو</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-nav d-flex align-items-center color text-white bgcolor" style="padding:20px; height:120px;" href="login.html">ورود</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-nav d-flex align-items-center color" style="padding:20px; height:120px;" href="#">درباره‌ی ما</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--                                                                                header                                                                                     -->
+
+    <div class="container-fluid bg-light" style="padding: 10% 40%;">
+        <div class="containar">
+            <form action="/action_page.php" style="padding: 30px;" class="text-right iran myBorder">
+                <div class="form-group">
+                    <label for="email">نام کاربری:</label>
+                    <input type="text" class="form-control" id="email" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">رمز عبور:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">تکرار رمز عبور:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="email">پست الکترونیک:</label>
+                    <input type="email" class="form-control" id="email" name="username">
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary btn-block bgcolor myBorder">ثبت نام</button>
+                <br />
+                <div class="form-group">
+                    <a href="login.html"> اگر حساب کاربری دارید، کلید کنید </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--                                                                                footer                                                                                     -->
+    <div class="containar-fluid">
+        <div class="row text-right bgcolor" style="padding: 50px">
+            <div class="col-md-5 " style="padding-left: 30px">
+                <h1 class="my-title">خانه یاب</h1>
+                <div class="text-white iran text-justify" style="font-size: 18px;">استارت‌آپ خانه‌یاب که حیات خود را از به عنوان یک ایده‌ی دانشجویی آغاز کرد اکنون بزرگ‌ترین مرجع معتبر مشخصات ملک در ایران است.</div>
+                <input class="btn btn-info float-left bgcolor-dark" type="button" value="بیشتر بخوانید">
+            </div>
+            <div class="col-md-4" style="padding-left: 30px">
+                <h3 class="my-title">تماس با ما</h3>
+                <div class="text-white iran text-justify" style="font-size: 18px; padding-top:10px;">ایران، خوزستان، دانشگاه شهید چمران اهواز<br /> بلوار شهید بیات‌فر، مرکز رشد و واحدهای فناور<br /> شماره تماس:<br /> 33330010 - 061</div>
+            </div>
+            <div class="col-md-3 " style="padding-left: 30px">
+                <h3 class="my-title">لینک های مرتبط</h3>
+                <ul>
+                    <li><a href="#" class="text-white" style="font-size: 18px; padding-top:5px;">بنیادمسکن</a></li>
+                    <li><a href="#" class="text-white" style="font-size: 18px; padding-top:5px;">وزارت راه و ساختمان</a></li>
+                    <li><a href="#" class="text-white" style="font-size: 18px; padding-top:5px;"> دانشگاه شهیدچمران اهواز</a></li>
+                    <li><a href="#" class="text-white" style="font-size: 18px; padding-top:5px;">مرکزرشد</a></li>
+                    <li><a href="#" class="text-white" style="font-size: 18px; padding-top:5px;">پارک علم وفناوری</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
